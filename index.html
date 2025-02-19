@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jez Salad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <a class="logo-link" href="#">
-            <img class="logo-header" src="./icons/Logo.svg" alt="Logo"/>
+        <a class="logo-link" href="#"><span class="JEZ">JEZ</span> SALAD</a>
         </a>
         <nav class="nav-header">
             <a class="header-link-home" href="#"><b>Home</b></a>
             <a class="header-link" href="#">Menu</a>
             <a class="header-link" href="#">Contact</a>
             <a class="header-link" href="#">About us</a>
-            <button class="sign-button">Sign</button>
         </nav>
+        <button class="sign-button">Sign</button>
     </header>
 
     <main class="main">
         <section class="banner">
-            <div>
-                <div class="banner-contents">
-                    <span class="banner-subheader">#1 Best Healthy Salad</span>
-                    <h1 class="banner-header">
-                        <span class="Skip-header">Skip</span> The Diet,<br>Just Eat Healthy<br>With Jez Salad
-                    </h1>
-                    <span class="banner-text">
-                        Imagine you don’t need a diet because we provide healthy and delicious food for you!
-                    </span>
-                </div>
-
+            <div class="banner-content">
+                <span class="banner-subheader">#1 Best Healthy Salad</span>
+                <h1 class="banner-header">
+                    <span class="Skip-header">Skip</span> The Diet,<br>Just Eat Healthy<br>With Jez Salad
+                </h1>
+                <span class="banner-text">
+                    Imagine you don’t need a diet because we provide<br> healthy and delicious food for you!
+                </span>
+        
                 <div class="banner-actions">
                     <button class="order-food">Order Food</button>
                 </div>
-
+        
                 <div class="banner-statistic">
-                    <p><span class="stat-number">5.000+</span><br>Customer</p>
-                    <p><span class="stat-number">8.000+</span><br>Delivery</p>
-                    <p><span class="stat-number">1.000+</span><br>Ratings</p>
+                    <p><span class="stat-number">5.000+</span><br><span class="stat-name">Customer</span></p>
+                    <p><span class="stat-number">8.000+</span><br><span class="stat-name">Delivery</span></p>
+                    <p><span class="stat-number">1.000+</span><br><span class="stat-name">Ratings</span></p>
                 </div>
-
-                <div class="banner-images">
-                    <img class="banner-woman" src="./icons/woman.svg" alt="Woman with salad"/>
-                    <img class="banner-dots" src="./icons/dots.svg"/>
-                    <img class="banner-dots-2" src="./icons/dots-2.svg"/>
-                    <img src="./icons/like_button.svg" alt="Like" />
-
+            </div>
+        
+            <div class="banner-images">
+                <img class="banner-woman" src="./icons/woman.svg" alt="Woman with salad"/>
+                <img class="banner-dots" src="./icons/dots.svg"/>
+                <img class="banner-dots-2" src="./icons/dots-2.svg"/>
+                <img class="Like" src="./icons/like_button.svg" alt="Like" />
+                <div class="banner-container">
                     <div class="customer-review">
-                        <img class="banner-woman" src="./icons/smile_review.svg" alt="Happy smile"/>
-                        <h5>Our Happy Customer</h5>
-                        <img class="star-icon" src="./icons/Star.svg" alt="Star icon"/>
-                        <p class="review">4.9 <span class="review-num">(1,989 Reviews)</span></p>
+                        <img class="smile-icon" src="./icons/smile_review.svg" alt="Happy smile"/>
+                        <div class="review-content">
+                            <span class="review-name">Our Happy Customer</span>
+                            <div class="review-num">
+                                <img class="star-icon" src="./icons/Star.svg" alt="Star icon"/>
+                                <span class="review-point">4.9</span> (1,989 Reviews)
+                            </div>
+                        </div>
                     </div>
-
+            
                     <div class="calories-info">
                         <h5 class="banner-article-calories">Daily Calories</h5>
-                        <p>123 Cal</p>
+                        <p class="calories-value">123 Cal</p>
                         <div class="calories-chart">
-                            <progress id="file" value="32" max="100"></progress>
-                            <progress id="file" value="40" max="100"></progress>
-                            <progress id="file" value="60" max="100"></progress>
-                            <progress id="file" value="40" max="100"></progress>
-                            <progress id="file" value="32" max="100"></progress>
-                            <progress id="file" value="70" max="100"></progress>
-                            <progress id="file" value="85" max="100"></progress>
-                            <progress id="file" value="90" max="100"></progress>
+                            <div class="bar"><div class="fill" style="height: 32%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 40%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 60%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 40%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 32%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 70%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 85%;"></div></div>
+                            <div class="bar"><div class="fill" style="height: 90%;"></div></div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
