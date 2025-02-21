@@ -4,10 +4,10 @@ body {
     background-size: 100% 30%;
     background-repeat: no-repeat;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .logo-link {
-    padding: 10px 0px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 24px;
@@ -597,10 +597,12 @@ body {
 
 .menu-article {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: clamp(10px, 5vw, 50px);
+    padding: 0px 5vw;
     margin-top: 10px;
-    gap: 30px;
-    padding: 0px 80px;
+    gap: 10px;
+    padding: 0px 80px; 
 }
 
 .food-menu {
@@ -651,4 +653,195 @@ body {
 .food-menu:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.subscribe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 550px;
+    margin: 0 auto;
+    border-radius: 50px;
+    text-align: center;
+    overflow: hidden;
+    background: url('./icons/Rectangle.svg') center/cover no-repeat;
+}
+
+.sub-text-section {
+    max-width: 60%;
+    margin-top: 20px;
+}
+
+.form-subheader {
+    color: #FB9333;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.form-header {
+    margin-top: 0px;
+    font-size: 48px;
+    color: #585858;
+    font-weight: 600;
+}
+
+.subscribe-describtion {
+    font-size: 16px;
+    color: #575757;
+    font-weight: 500;
+    margin-bottom:20px;
+}
+
+form {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-left: 31px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+input[type="email"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 100px;
+    font-weight: 400;
+}
+
+button {
+    background: #FB9333;
+    width: 170px;
+    height: 64px;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    gap: 60px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+
+.about, .feature, .get-in-touch, .social-media {
+    flex: 1;
+    min-width: 0;
+}
+
+.company-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #575757;
+    max-width: 60%;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+
+.feature h5,
+.get-in-touch h5 {
+    margin-top: 2px;
+    color: #FB9333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.feature a, .get-in-touch span {
+    text-decoration: none;
+    color: #575757;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: normal;
+    max-width: 100%;
+}
+
+.get-in-touch span {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.get-in-touch img {
+    width: 16px;
+}
+
+.feature-links {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 32px;
+    margin-left: 0;
+    flex-wrap: wrap;
+}
+
+.social-media a img {
+    width: 26px;
+    height: 22px;
+}
+
+.social-media span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #575757;
+    margin-top: 10px;
 }

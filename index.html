@@ -217,25 +217,22 @@
         </section>
 
         <section class="subscribe">
-            <img class="background" src="./icons/Rectangle.svg" alt="Background"/>
             <div class="sub-text-section">
-                <h4 class="menu-subheader">Our Subscribe</h4>
-                <h2>Subscribe To Get The Latest<br>Promo from Jez Salad</h2>
+                <h4 class="form-subheader">Our Subscribe</h4>
+                <h2 class="form-header">Subscribe To Get The Latest<br>Promo from Jez Salad</h2>
                 <p class="subscribe-describtion">We recommended you to subscribe to our promo program, 
                     drop your email below to get daily update about us
                 </p>
+                <form onsubmit="yourOnSubmitFunc()">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>   
             </div>
-            <form onsubmit="yourOnSubmitFunc()">
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>   
         </section>
 
-        <footer>
+        <footer class="footer-site">
             <div class="about">
-                <a class="logo-link" href="#">
-                    <img class="logo-header" src="./icons/Logo.svg" alt="Logo"/>
-                </a>
+                <a class="logo-link" href="#"><span class="JEZ">JEZ</span> SALAD</a>
                 <p class="company-desc">Jez Salad is the pioneer of healthy fruit salad with 
                     high nutrition.</p>
                 <span class="copyright">©Copyright Jez Salad</span>
@@ -243,10 +240,12 @@
 
             <nav class="feature">
                 <h5>Feature</h5>
-                <a href="#" class="menu-link">Menu</a>
-                <a href="#" class="promo-link">Promo</a>
-                <a href="#" class="contact-link">Contact</a>
-                <a href="#" class="about-us-link">About us</a>
+                <div class="feature-links">
+                    <a href="#" class="menu-link">Menu</a>
+                    <a href="#" class="promo-link">Promo</a>
+                    <a href="#" class="contact-link">Contact</a>
+                    <a href="#" class="about-us-link">About us</a>
+                </div>
             </nav>
 
             <div class="get-in-touch">
@@ -266,15 +265,17 @@
             </div>
 
             <div class="social-media">
-                <a href="#" class="twiiter-link">
-                    <img src="./icons/Vector.svg" alt="Twitter link" />
-                </a>
-                <a href="#" class="ln-link">
-                    <img src="./icons/linkedin (2) 1.svg" alt="Linkedin link" />
-                </a>
-                <a href="#" class="twiiter-link">
-                    <img src="./icons/instagram (2) 1.svg" alt="Instagram link" />
-                </a>
+                <div class="social-links">
+                    <a href="#" class="twiiter-link">
+                        <img src="./icons/Vector.svg" alt="Twitter link" />
+                    </a>
+                    <a href="#" class="ln-link">
+                        <img src="./icons/linkedin (2) 1.svg" alt="Linkedin link" />
+                    </a>
+                    <a href="#" class="twiiter-link">
+                        <img src="./icons/instagram (2) 1.svg" alt="Instagram link" />
+                    </a>
+                </div>
                 <span>Follow our social media.</span>
 
             </div>
