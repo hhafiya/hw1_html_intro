@@ -60,11 +60,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sign-button:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-3px);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .banner {
@@ -131,11 +132,12 @@ body {
     font-weight: 600;
     font-size: 18px;
     margin-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .order-food:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    transform: translateY(-3px);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .banner-statistic {
@@ -384,12 +386,14 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .learn-more:hover {
     background-color: #FB9333;
     color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .arrow-right-icon {
@@ -476,7 +480,7 @@ body {
     cursor: pointer;
     padding: 5px;
     margin-right: 20px;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .next-button {
@@ -488,18 +492,19 @@ body {
     border-radius: 15px;
     cursor: pointer;
     padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .prev-button:hover {
     background: #FB9333;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    transform: translateY(-3px);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .next-button:hover {
     background: #FB9333;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-3px);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .articles-container_rev {
